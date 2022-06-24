@@ -162,7 +162,7 @@ body {
     width: 100%;
     border: none;
     background-color: var(--rainStorm);
-    height: 2rem;
+    height: 2.5rem;
     border-radius: 1rem;
     padding: 0 1rem;
     font-size: 1.5rem;
@@ -199,24 +199,56 @@ body {
 .greetingCard{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .greetingCard__text{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     margin-left: 1rem;
 }
 
 .greetingCard__text p {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
+.greetText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
 .greetingCard__text h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
+}
+
+.greetingCard__btns{
+
+}
+
+.btn{
+    background-color: var(--redVine);
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    color: var(--Linen);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.btn:hover{
+    background-color: var(--roseHip);
+    color: black;
+    cursor: pointer;
+    transition: 0.1s;
 }
 /* Header Ends Here */
 
