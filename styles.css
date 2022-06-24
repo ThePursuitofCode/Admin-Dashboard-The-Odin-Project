@@ -145,6 +145,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 2;
+    box-shadow: -1px 9px 9px 3px rgba(0, 0, 0, 0.295);
 }
 
 .searchCard{
@@ -267,7 +269,15 @@ body {
     position: absolute;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    padding: 2.6rem 0rem 0rem 0rem;
+    z-index: 100;
+}
+
+.content__text--custom{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2.6rem 0rem 0rem 1.5rem;
     z-index: 100;
 }
 
@@ -278,7 +288,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
@@ -362,7 +372,8 @@ body {
     background-color: var(--Linen);
     border-radius: 0.5rem;
     padding: 1.8rem;
-    margin: 5.2rem 1.5rem 1.5rem 0;
+    margin: 4.5rem 1.5rem 1.5rem 0;
+    box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.19);
 }
 
 .announcementCard{
@@ -385,4 +396,39 @@ body {
 
 .line {
     width: 100%;
+}
+
+.trendingContainer{
+    height: 100%;
+}
+
+.trendingFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--Linen);
+    border-radius: 0.5rem;
+    padding: 1.8rem;
+    margin: 4.7rem 1.5rem 1.5rem 0;
+    box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.19);
+    height: 62%;
+}
+
+.trendingCard{
+    display: flex;
+    align-items: center;
+}
+
+.innerCard{
+    margin-left: 1rem;
+}
+
+.innerCard h3 {
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.innerCard p {
+    font-weight: 300;
+    color: rgb(49, 48, 48);
 }
