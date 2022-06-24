@@ -1,0 +1,227 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Color Palette */
+:root{
+    --redVine: #BA494B;
+    --roseHip: #E5CBC1;
+    --antique: #F0E7DA;
+    --rainStorm: #A6B4B3;
+    --Linen: #E3E4E0;
+    
+}
+/* ===================================== */
+/* https://materialdesignicons.com/ */
+/* ===================================== */
+/* CSS STARTS HERE */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+/* Sidebar Starts Here */
+.sidebar{
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: var(--redVine);
+    padding: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.logo__container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.logo__container h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-left: 1rem;
+    color: var(--Linen);
+}
+.logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.logo div {
+    background-color: var(--Linen);
+}
+
+.logoOne{grid-area: 1 / 1 / 4 / 3;}
+.logoTwo{grid-area: 4 / 1 / 6 / 3;}
+.logoThree{grid-area: 1 / 3 / 3 / 5;}
+.logoFour{grid-area: 3 / 3 / 6 / 5;}
+
+
+.pagesCard{
+    margin-bottom: 5rem;
+}
+
+.pages--styles{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.pageText {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Linen);
+    margin-left: 1.5rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.pageText:hover {
+    color: var(--roseHip);
+    cursor: pointer;
+    transition: 0.1s;
+}
+/* Sidebar Ends Here */
+
+/* Header Starts Here */
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: var(--Linen);
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.searchCard{
+    width: 100%;
+    display: flex;
+}
+
+.searchCard__search{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.searchCard__search input {
+    width: 100%;
+    border: none;
+    background-color: var(--rainStorm);
+    height: 2rem;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.searchCard__search input:focus {
+    border: var(--redVine) 0.2rem solid;
+    outline: none;
+    outline-offset: none;
+}
+
+.searchCard__profile{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 40%;
+}
+
+.searchCard__profile svg{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+
+.searchCard__profile h3 {
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.greetingCard{
+    display: flex;
+    align-items: center;
+}
+
+.greetingCard__text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.greetingCard__text p {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.greetingCard__text h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+/* Header Ends Here */
+
+.content {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: var(--rainStorm);
+}
+
